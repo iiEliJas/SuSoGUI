@@ -63,7 +63,7 @@ The solver (`src/sudoku.c`) is compiled as a shared library and called in `sudok
 
 - **Bitmasks** to track digit usage across rows, columns and boxes in O(1)
 - **Constraint propagation** to fill forced cells before branching
-- **Backtracking** with the MRV heuristic to pick the best cells first
+- **Backtracking** with MRV to pick the best cells first
 
 ---
 
