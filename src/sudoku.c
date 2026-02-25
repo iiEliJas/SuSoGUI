@@ -24,7 +24,7 @@ typedef struct{
 //
 static inline int lowestSetBit(int mask){
     int pos = 0;
-    while(pos<32 && !(mask & (1 << pos))) pos++;
+    while(pos<10 && !(mask & (1 << pos))) pos++;
     return pos;
 }
 

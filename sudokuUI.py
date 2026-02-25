@@ -4,6 +4,7 @@ from tkinter import messagebox
 import time
 
 
+# get C functions from the library
 lib = ctypes.CDLL("./lib/sudoku.so")
 lib.solveSudoku.argtypes = [ctypes.POINTER(ctypes.c_int)]
 lib.solveSudoku.restype  = ctypes.c_int
@@ -22,7 +23,7 @@ CELL_LINE   = DIM_GREY      # inner cell borders
 CELL_BG     = EGGSHELL      # cell background
 CELL_HOV    = "#BBBAA9"     # hovered cell
 GIVEN_FG    = COAL_BROWN    # digits the user typed
-SOLVED_FG   = "#e94560"     # digits filled by the solver
+SOLVED_FG   = "#B1304A"     # digits filled by the solver
 
 BTN_BG      = "#e94560"     # Solve and clear button
 BTN_FG      = EGGSHELL 

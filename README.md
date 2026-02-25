@@ -11,7 +11,7 @@
 ## Features
 
 - **Solver written in C** using bitmask techniques and constraint propagation
-- **MRV heuristic** (Minimum Remaining Values) to minimize backtracking
+- **MRV** (Minimum Remaining Values) to minimize backtracking
 - **Naked singles** detection for efficient solving
 - **Python GUI** for an easy, interactive experience
 
@@ -29,7 +29,7 @@
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/iiEliJas/SudokuSolverC.git
+git clone https://github.com/iiEliJas/SuSoGUI.git
 ```
 
 **2. Compile the C library**
@@ -47,7 +47,7 @@ python sudokuUI.py
 ## Project Structure
 
 ```
-SudokuSolverC/
+SuSoGUI/
 ├── src/
 │   └── sudoku.c        # Core solver (C)
 ├── lib/
@@ -67,6 +67,6 @@ The solver (`src/sudoku.c`) is compiled as a shared library and called in `sudok
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the [MIT License](LICENSE).
